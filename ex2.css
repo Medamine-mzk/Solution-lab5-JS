@@ -1,0 +1,58 @@
+.container{
+    width:90%;
+    margin: auto;
+}
+label{
+    padding-left: 10px;
+}
+.cont2{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.data{
+    margin: 10px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    border : 1px solid #299be4;
+}
+.focusClass{  
+    outline: none;
+    box-shadow: -1px -1px 10px 2px  #299be4;
+}
+.elem{
+    width: 25%;
+    display: grid;
+}
+.mybtn{
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 30px;
+    width: 100%;
+    color: white;
+    background-color:#299be4;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+table{
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+td{
+    padding: 10px;
+    border-right: 2px solid #ddd;
+}
+tr{
+    border-top: 2px solid #ddd;
+}
+tr:nth-child(odd){
+    background-color: rgba(0, 0, 0, 0.08);
+}

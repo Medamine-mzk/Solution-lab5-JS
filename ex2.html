@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+    <form action="" id="myform">
+        <div class="container">
+            <div class="cont2">
+                <div class="elem">
+                    <label for="dim">Taille</label>
+                    <input onblur="fnblur(this)" onfocus="fnfocus(this)" class="data" type="text" name="dim" id="dim">
+                </div>
+                <div class="elem">
+                    <label for="min">Borne inf</label>
+                    <input onblur="fnblur(this)" onfocus="fnfocus(this)" class="data" type="text" name="min" id="min">
+                </div>
+                <div class="elem">
+                    <label for="max">Borne sup</label>
+                    <input onblur="fnblur(this)" onfocus="fnfocus(this)" class="data" type="text" name="max" id="max">
+                </div>
+            </div>
+            
+            <input type="submit" value="generate" name="btn" id="btn" class="mybtn">
+                
+            
+            <div class="result">
+                <table id="mytable" class="table-light">
+                  <!-- dom -->
+                </table>
+            </div>
+        </div>
+    </form>
+
+
+
+
+    <script src="ex2.js" defer></script>
+</body>
+</html>

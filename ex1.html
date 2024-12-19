@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="ex1.css">
+</head>
+<body onload="nivSec()">
+    <fieldset>
+        <legend>Inscription</legend>
+        <form  id="myform" action="">
+        <!--
+        <table>
+            <tr>
+                <td><label for="name">Prénom et Nom *:</label> </td>
+                <td><input type="text" size="29" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="cin">CIN *:</label> </td>
+                <td><input type="text" size="10" name="cin" id="cin"></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Adresse Email *:</label> </td>
+                <td><input type="text" size="29" name="mail" id="mail"></td>
+            </tr>
+            <tr>
+                <td><label for="cin">Niveau scolaire :</label> </td>
+                <td>
+                    <input type="radio" name="niv" id="niv1" checked>Sécondaire
+                    <input type="radio" name="niv" id="niv2">Universitaire
+                    <input type="radio" name="niv" id="niv3">Autre
+                </td>
+            </tr>
+            <tr>
+                <td id="tdtop"><label for="forma">Modules de formation :</label> </td>
+                <td>
+                    <select name="forma" id="forma" multiple onchange="countSelected()">
+                        <option value="HTML5">HTML5</option>
+                        <option value="CSS3">CSS3</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="JQuery">JQuery</option>
+                    </select>
+                </td>
+            </tr>
+     
+            <tr>
+                <td colspan="2">
+                    (*) Champs obligatoires <br>
+                    <input type="submit" value="Envoyer" >
+                    <input type="reset" value="Annuler">
+                </td>
+            </tr>
+          
+        </table>
+        -->
+        
+        
+        
+        <div class="elem">
+            <label for="name">Prénom et Nom *:</label>
+            <input type="text" size="29" name="name" id="name">
+        </div>
+        <div class="elem">
+            <label for="cin">CIN *:</label>
+            <input type="text" size="10" name="cin" id="cin">
+        </div>
+        <div class="elem">
+            <label for="mail">Adresse Email *:</label>
+            <input type="text" size="29" name="mail" id="mail">
+        </div>
+        <div class="elem">
+            <label for="niv">Niveau scolaire :</label> 
+            <input type="radio" name="niv" id="niv1">Sécondaire
+            <input type="radio" name="niv" id="niv2">Universitaire
+            <input type="radio" name="niv" id="niv3">Autre
+        </div>
+        <div class="elem">
+            <label for="forma" id="tdtop">Modules de formation :</label>
+            <select name="forma" id="forma" multiple onchange="countSelected()">
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CSS3</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="JQuery">JQuery</option>
+            </select>
+        </div>
+        <div class="elem">
+            (*) Champs obligatoires <br>
+            <input type="submit" value="Envoyer" >
+            <input type="reset" value="Annuler">
+        </div>
+        </form>
+    </fieldset>
+    <script>
+        function nivSec(){
+            document.getElementById('niv1').checked=true;
+        }
+    </script>
+    <script src="ex1.js"></script>
+</body>
+</html>

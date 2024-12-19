@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Manipuler Styles</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tr>
+                <td>couleur de fond (rgb)</td>
+                <td>
+                    0<input type="range" min="0" max="255" step=5 name='color' oninput='update(this)' value="0">255
+                </td>
+                <td rowspan="6" width="400" align="center">
+                    <h1 id="p1">Titre de test</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>
+                    0<input type="range" name="padding" min="0" max="30" step=5 oninput='update(this)' value="0">30
+                </td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>
+                    0<input type="range" min="5" max="200" name="height" step=50 value="0" oninput='update(this)'>200
+                </td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>
+                    0<input type="range" min="5" max="200" name="width" step=50 value="0" oninput='update(this)'>200
+                </td>
+            </tr>
+            <tr>
+                <td>arrondi</td>
+                <td>
+                    0<input type="range" min="5" max="30" name="radius" step=5 value="0" oninput='update(this)'>30
+                </td>
+            </tr>
+            <tr>
+                <td>rotation</td>
+                <td>
+                    0<input type="range" min="5" max="180" name="rotation" step=5 value="0" oninput='update(this)'>180
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+    <script src="ex4.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex3.css">
+    <script src="ex3.js" defer></script>
+</head>
+
+<body>
+
+    <form id="myform">
+        <fieldset id="field1">
+            <legend>Vos Coordonnées</legend>
+            <div class="container">
+
+                <div class="formelem">
+                    <label for="lname">Nom:</label>
+                    <input onfocus="myfocus(this)" onblur="myBlur(this)"  class="data" type="text" id="lname" placeholder="votre nom">
+                </div>
+
+                <div class="formelem">
+                    <label for="fname">Prénom:</label>
+                    <input onblur="myBlur(this)" class="data" type="text" id="fname" placeholder="votre prenom">
+                </div>
+
+                <div class="formelem">
+                    <label for="daten">Date naissance:</label>
+                    <input onblur="myBlur(this)" class="data" type="date" id="daten">
+                </div>
+
+                <div class="formelem">
+                    <label for="email">eMail :</label>
+                    <input onblur="myBlur(this)" class="data" type="email" id="email" placeholder="votre email">
+                </div>
+
+                <div class="formelem">
+                    <label for="site">Site :</label>
+                    <input onblur="myBlur(this)" class="data" type="text" placeholder="Votre site" id="site">
+                </div>
+
+                <div class="formelem">
+                    <label for="code">Mot de passe :</label>
+                    <input onblur="myBlur(this)" class="data" type="password" placeholder="Votre site" id="code">
+                </div>
+                <div class="formelem">
+                    <label for="genre">Genre :</label>
+                    <input type="radio" name="genre">Homme
+                    <input type="radio" name="genre">Femme
+                </div>
+                <div class="formelem">
+                    <label for="pays">Pays :</label>
+                    <select class="data" name="pays" id="pays">
+                        <option value="votre pays" selected>Votre pays</option>
+                        <optgroup label="Afrique">
+                            <option value="tn">Tun</option>
+                            <option value="alg">Alger</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="fr">Fr</option>
+                            <option value="belg">Belg</option>
+                        </optgroup>
+                        <optgroup label="Amérique">
+                            <option value="ca">Ca</option>
+                            <option value="arg">Arg</option>
+                        </optgroup>
+                        <optgroup label="Autres">
+                            <option value="eur">Europ</option>
+                            <option value="asi">Asie</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Vos formation</legend>
+            <div>
+                <input type="checkbox" name="forma" value="html"> formation en html 5 <br>
+                <input type="checkbox" name="forma" value="css"> formation en CSS3 <br>
+                <input type="checkbox" name="forma" value="js"> formation en JS <br>
+                <textarea name="desc" id="desc" cols="50" rows="5" placeholder="decrire votre besoin"></textarea>
+
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Envoyer nous votre photo</legend>
+            <input id="myfile" type="file">
+            <input type="hidden" value="taille max 10ko">
+            <br>
+            <input type="reset" value="Effacer" class="btn">
+            <input type="submit" value="Envoyer" class="btn">
+        </fieldset>
+    </form>
+
+  
+    
+</body>
+
+</html>
